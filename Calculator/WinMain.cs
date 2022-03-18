@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calculator.Class;
 
 namespace Calculator
 {
@@ -17,9 +18,14 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnStrConCat_Click(object sender, EventArgs e)
         {
+            txtBoxResult.Text = StringMaker.Join(txtBoxResult.Text, ((System.Windows.Forms.Button)sender).Text);
+        }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtBoxResult.Text = string.Empty;
         }
     }
 }
