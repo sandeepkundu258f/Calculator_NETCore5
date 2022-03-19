@@ -27,5 +27,10 @@ namespace Calculator
         {
             txtBoxResult.Text = string.Empty;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            txtBoxResult.Text = StringMaker.Remove(txtBoxResult.Text);
+        }
     }
 }

@@ -134,9 +134,9 @@ namespace Calculator
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn7.Location = new System.Drawing.Point(5, 235);
+            this.btn7.Location = new System.Drawing.Point(2, 235);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(73, 70);
+            this.btn7.Size = new System.Drawing.Size(76, 70);
             this.btn7.TabIndex = 8;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
@@ -261,6 +261,7 @@ namespace Calculator
             this.btnBack.Size = new System.Drawing.Size(70, 68);
             this.btnBack.TabIndex = 19;
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // WinMain
             // 
