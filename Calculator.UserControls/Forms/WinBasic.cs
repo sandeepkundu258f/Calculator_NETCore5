@@ -37,5 +37,16 @@ namespace Calculator
         {
             txtBoxResult.Text = ResultCalculation.Calculate(txtBoxResult.Text);
         }
+
+        private void WinBasic_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if(e.KeyData == Keys.NumPad0 || e.key)
+            txtBoxResult.Text = KeyboardInput.ProcessKey(txtBoxResult.Text, e);
+        }
+
+        private void btnRemoveFocus_MouseUp(object sender, MouseEventArgs e)
+        {
+            menuBar.Focus();
+        }
     }
 }
