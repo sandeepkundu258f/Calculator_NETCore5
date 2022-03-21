@@ -37,10 +37,5 @@ namespace Calculator
         {
             txtBoxResult.Text = ResultCalculation.Calculate(txtBoxResult.Text);
         }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
     }
 }

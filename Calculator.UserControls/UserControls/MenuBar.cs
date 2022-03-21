@@ -15,7 +15,7 @@ namespace Calculator.UserControls
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
