@@ -1,7 +1,7 @@
 ﻿
 namespace Calculator
 {
-    partial class WinMain
+    partial class WinBasic
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinBasic));
             this.btn1 = new System.Windows.Forms.Button();
             this.txtBoxResult = new System.Windows.Forms.TextBox();
             this.btn2 = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@ namespace Calculator
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.menuBar1 = new Calculator.UserControls.MenuBar();
+            this.menuBar = new Calculator.UserControls.MenuBar();
             this.SuspendLayout();
             // 
             // btn1
@@ -257,7 +257,7 @@ namespace Calculator
             // 
             this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Image = global::Calculator.Properties.Resources.Back_Button_icon;
+            this.btnBack.Image = global::Calculator.UserControls.Properties.Resources.Back_Button_icon;
             this.btnBack.Location = new System.Drawing.Point(329, 196);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(76, 68);
@@ -265,20 +265,20 @@ namespace Calculator
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // menuBar1
+            // menuBar
             // 
-            this.menuBar1.Location = new System.Drawing.Point(1, 0);
-            this.menuBar1.Name = "menuBar1";
-            this.menuBar1.Size = new System.Drawing.Size(404, 28);
-            this.menuBar1.TabIndex = 20;
+            this.menuBar.Location = new System.Drawing.Point(1, 0);
+            this.menuBar.Name = "menuBar";
+            this.menuBar.Size = new System.Drawing.Size(404, 27);
+            this.menuBar.TabIndex = 20;
             // 
-            // WinMain
+            // WinBasic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(407, 419);
-            this.Controls.Add(this.menuBar1);
+            this.Controls.Add(this.menuBar);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnEqual);
@@ -301,7 +301,7 @@ namespace Calculator
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "WinMain";
+            this.Name = "WinBasic";
             this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -329,7 +329,7 @@ namespace Calculator
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBack;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private UserControls.MenuBar menuBar1;
+        private UserControls.MenuBar menuBar;
     }
 }
 

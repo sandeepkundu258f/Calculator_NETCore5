@@ -11,9 +11,9 @@ using Calculator.Class;
 
 namespace Calculator
 {
-    public partial class WinMain : Form
+    public partial class WinBasic : Form
     {
-        public WinMain()
+        public WinBasic()
         {
             InitializeComponent();
         }

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Class", "Calculator.Class\Calculator.Class.csproj", "{C1A080CF-2D48-4C6A-88F3-241FC6170B2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.UserControls", "Calculator.UserControls\Calculator.UserControls.csproj", "{80CC9B30-BD05-4B1C-B4FA-491288D27C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.UserControls", "Calculator.UserControls\Calculator.UserControls.csproj", "{80CC9B30-BD05-4B1C-B4FA-491288D27C04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
