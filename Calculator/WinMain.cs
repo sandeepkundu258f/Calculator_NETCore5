@@ -32,5 +32,15 @@ namespace Calculator
         {
             txtBoxResult.Text = StringMaker.Remove(txtBoxResult.Text);
         }
+
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            txtBoxResult.Text = ResultCalculation.Calculate(txtBoxResult.Text);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
