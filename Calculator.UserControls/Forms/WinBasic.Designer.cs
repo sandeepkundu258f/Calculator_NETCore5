@@ -50,7 +50,7 @@ namespace Calculator
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.menuBar = new Calculator.UserControls.MenuBar();
+            this.menuBar = new Calculator.UserControls.MenuBar(this);
             this.SuspendLayout();
             // 
             // btn1

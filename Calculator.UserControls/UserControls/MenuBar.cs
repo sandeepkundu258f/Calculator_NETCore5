@@ -6,9 +6,11 @@ namespace Calculator.UserControls
 {
     public partial class MenuBar : UserControl
     {
-        public MenuBar()
+        private WinBasic winBasicParent;
+        public MenuBar(WinBasic _winBasicParent)
         {
             InitializeComponent();
+            winBasicParent = _winBasicParent;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -18,8 +20,8 @@ namespace Calculator.UserControls
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AboutBox aboutBox = new AboutBox();
-            aboutBox.Show();
+            AboutBox aboutBox = new();
+            aboutBox.ShowDialog(winBasicParent);
         }
     }
 }
