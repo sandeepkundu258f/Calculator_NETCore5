@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator.Class;
 
-namespace Calculator
+namespace Calculator.UserControls.UserControls
 {
-    public partial class WinBasic : Form
+    public partial class Basic : UserControl
     {
-        public WinBasic()
+        public Basic()
         {
             InitializeComponent();
         }
@@ -38,15 +38,19 @@ namespace Calculator
             txtBoxResult.Text = ResultCalculation.Calculate(txtBoxResult.Text);
         }
 
-        private void WinBasic_KeyDown(object sender, KeyEventArgs e)
+        private void btnRemoveFocus_MouseUp(object sender, MouseEventArgs e)
         {
-            //if(e.KeyData == Keys.NumPad0 || e.key)
+            lblHidden.Focus();
+        }
+
+        private void lblHidden_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
             txtBoxResult.Text = KeyboardInput.ProcessKey(txtBoxResult.Text, e);
         }
 
-        private void btnRemoveFocus_MouseUp(object sender, MouseEventArgs e)
+        private void txtBoxResult_Click(object sender, EventArgs e)
         {
-            menuBar.Focus();
+            lblHidden.Focus();
         }
     }
 }

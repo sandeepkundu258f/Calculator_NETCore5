@@ -9,7 +9,7 @@ namespace Calculator.Class
 {
     public static class KeyboardInput
     {
-        public static string ProcessKey(string strOut, KeyEventArgs e)
+        public static string ProcessKey(string strOut, PreviewKeyDownEventArgs e)
         {
             if(e.KeyData == Keys.NumPad0 || e.KeyData == Keys.D0)
             {
