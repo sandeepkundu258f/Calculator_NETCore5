@@ -16,6 +16,11 @@
     <Company>D-Company</Company>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Calculator.UserControls\Calculator.UserControls.csproj" />
   </ItemGroup>

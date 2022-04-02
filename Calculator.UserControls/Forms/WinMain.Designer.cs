@@ -45,7 +45,7 @@ namespace Calculator
             // basicCalculator
             // 
             this.basicCalculator.Location = new System.Drawing.Point(1, 32);
-            this.basicCalculator.Name = Constants.basicCalculator;
+            this.basicCalculator.Name = "basicCalculator";
             this.basicCalculator.Size = new System.Drawing.Size(410, 377);
             this.basicCalculator.TabIndex = 1;
             // 
@@ -54,7 +54,7 @@ namespace Calculator
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(412, 405);
+            this.ClientSize = new System.Drawing.Size(412, 409);
             this.Controls.Add(this.basicCalculator);
             this.Controls.Add(this.menuBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
