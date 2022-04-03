@@ -20,7 +20,7 @@ namespace Calculator.UserControls.UserControls
 
         private void btnStrConCat_Click(object sender, EventArgs e)
         {
-            txtBoxResult.Text = StringMaker.Join(txtBoxResult.Text, ((System.Windows.Forms.Button)sender).Text);
+            txtBoxResult.Text = StringMaker.Join(txtBoxResult.Text, ((Button)sender).Text);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
