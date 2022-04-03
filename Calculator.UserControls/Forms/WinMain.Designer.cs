@@ -1,6 +1,6 @@
 ﻿using Calculator.Class;
 
-namespace Calculator
+namespace Calculator.UserControls.Forms
 {
     partial class WinMain
     {
@@ -62,14 +62,15 @@ namespace Calculator
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "WinMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Basic Calculator";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private UserControls.UserControls.MenuBar menuBar;
-        private UserControls.UserControls.Basic basicCalculator;
+        private UserControls.MenuBar menuBar;
+        private UserControls.Basic basicCalculator;
     }
 }
 

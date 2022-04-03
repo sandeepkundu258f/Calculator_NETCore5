@@ -8,12 +8,12 @@
     <PackageIconUrl />
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <Authors>Sandeep Kundu</Authors>
-    <AssemblyVersion>1.2.0.0</AssemblyVersion>
-    <FileVersion>1.2.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <Description>Basic Calculator</Description>
-    <Version>1.2.0</Version>
-    <Copyright>No Copyright (Maybe!)</Copyright>
-    <Company>D-Company</Company>
+    <Version>2.0.0.0</Version>
+    <Copyright>No Copyright</Copyright>
+    <Company>None</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -63,7 +63,7 @@ namespace Calculator.UserControls.UserControls
             this.btnBack.TabStop = false;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            this.btnBack.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnBack.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btnClear
             // 
@@ -76,7 +76,7 @@ namespace Calculator.UserControls.UserControls
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            this.btnClear.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnClear.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btnEqual
             // 
@@ -89,7 +89,7 @@ namespace Calculator.UserControls.UserControls
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
             this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
-            this.btnEqual.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnEqual.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btnDivide
             // 
@@ -102,7 +102,7 @@ namespace Calculator.UserControls.UserControls
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
             this.btnDivide.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btnDivide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnDivide.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btnMultiply
             // 
@@ -115,7 +115,7 @@ namespace Calculator.UserControls.UserControls
             this.btnMultiply.Text = "x";
             this.btnMultiply.UseVisualStyleBackColor = true;
             this.btnMultiply.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btnMultiply.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnMultiply.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btnSubtract
             // 
@@ -128,7 +128,7 @@ namespace Calculator.UserControls.UserControls
             this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = true;
             this.btnSubtract.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btnSubtract.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnSubtract.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btnAdd
             // 
@@ -141,7 +141,7 @@ namespace Calculator.UserControls.UserControls
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btnAdd.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnAdd.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btnDecimal
             // 
@@ -154,7 +154,7 @@ namespace Calculator.UserControls.UserControls
             this.btnDecimal.Text = ".";
             this.btnDecimal.UseVisualStyleBackColor = true;
             this.btnDecimal.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btnDecimal.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btnDecimal.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn0
             // 
@@ -167,7 +167,7 @@ namespace Calculator.UserControls.UserControls
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
             this.btn0.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn0.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn0.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn9
             // 
@@ -180,7 +180,7 @@ namespace Calculator.UserControls.UserControls
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
             this.btn9.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn9.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn8
             // 
@@ -193,7 +193,7 @@ namespace Calculator.UserControls.UserControls
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
             this.btn8.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn8.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn7
             // 
@@ -206,7 +206,7 @@ namespace Calculator.UserControls.UserControls
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn7.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn6
             // 
@@ -219,7 +219,7 @@ namespace Calculator.UserControls.UserControls
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn6.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn5
             // 
@@ -232,7 +232,7 @@ namespace Calculator.UserControls.UserControls
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
             this.btn5.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn5.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn4
             // 
@@ -245,7 +245,7 @@ namespace Calculator.UserControls.UserControls
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn4.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn3
             // 
@@ -258,7 +258,7 @@ namespace Calculator.UserControls.UserControls
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn3.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn2
             // 
@@ -271,7 +271,7 @@ namespace Calculator.UserControls.UserControls
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn2.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // txtBoxResult
             // 
@@ -286,8 +286,7 @@ namespace Calculator.UserControls.UserControls
             this.txtBoxResult.TabIndex = 21;
             this.txtBoxResult.TabStop = false;
             this.txtBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtBoxResult.Click += new System.EventHandler(this.txtBoxResult_Click);
-            //this.txtBoxResult.Enabled = false;
+            this.txtBoxResult.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // btn1
             // 
@@ -300,7 +299,7 @@ namespace Calculator.UserControls.UserControls
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btnStrConCat_Click);
-            this.btn1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRemoveFocus_MouseUp);
+            this.btn1.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             // 
             // lblHidden
             // 
@@ -338,6 +337,7 @@ namespace Calculator.UserControls.UserControls
             this.Controls.Add(this.lblHidden);
             this.Name = "Basic";
             this.Size = new System.Drawing.Size(410, 377);
+            this.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
             this.ResumeLayout(false);
             this.PerformLayout();
 

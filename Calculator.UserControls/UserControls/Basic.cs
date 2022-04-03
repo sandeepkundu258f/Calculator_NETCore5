@@ -38,17 +38,12 @@ namespace Calculator.UserControls.UserControls
             txtBoxResult.Text = ResultCalculation.Calculate(txtBoxResult.Text);
         }
 
-        private void btnRemoveFocus_MouseUp(object sender, MouseEventArgs e)
-        {
-            lblHidden.Focus();
-        }
-
         private void lblHidden_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             txtBoxResult.Text = KeyboardInput.ProcessKey(txtBoxResult.Text, e);
         }
 
-        private void txtBoxResult_Click(object sender, EventArgs e)
+        private void btnRemoveFocus_Enter(object sender, EventArgs e)
         {
             lblHidden.Focus();
         }

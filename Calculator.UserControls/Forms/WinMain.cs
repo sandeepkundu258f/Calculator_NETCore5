@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator.Class;
 
-namespace Calculator
+namespace Calculator.UserControls.Forms
 {
     public partial class WinMain : Form
     {
