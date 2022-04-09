@@ -40,7 +40,7 @@ namespace Calculator.UserControls.UserControls
 
         private void lblHidden_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            txtBoxResult.Text = KeyboardInput.ProcessKey(txtBoxResult.Text, e);
+            txtBoxResult.Text = KeyboardInput.ProcessKeyCalculation(txtBoxResult.Text, e);
         }
 
         private void btnRemoveFocus_Enter(object sender, EventArgs e)

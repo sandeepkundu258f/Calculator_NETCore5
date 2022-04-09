@@ -275,6 +275,7 @@ namespace Calculator.UserControls.UserControls
             // 
             // txtBoxResult
             // 
+            this.txtBoxResult.BackColor = System.Drawing.SystemColors.Control;
             this.txtBoxResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxResult.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtBoxResult.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

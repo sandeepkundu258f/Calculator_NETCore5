@@ -8,9 +8,9 @@
     <PackageIconUrl />
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <Authors>Sandeep Kundu</Authors>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    <Description>Basic Calculator</Description>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <Description>Calculator</Description>
     <Version>2.0.0.0</Version>
     <Copyright>No Copyright</Copyright>
     <Company>None</Company>

@@ -37,6 +37,7 @@ namespace Calculator.UserControls.Forms
             // 
             // menuBar
             // 
+            this.menuBar.BackColor = System.Drawing.SystemColors.Control;
             this.menuBar.Location = new System.Drawing.Point(1, 1);
             this.menuBar.Name = "menuBar";
             this.menuBar.Size = new System.Drawing.Size(410, 24);
@@ -55,7 +56,7 @@ namespace Calculator.UserControls.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(412, 409);
+            this.ClientSize = new System.Drawing.Size(411, 409);
             this.Controls.Add(this.basicCalculator);
             this.Controls.Add(this.menuBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
