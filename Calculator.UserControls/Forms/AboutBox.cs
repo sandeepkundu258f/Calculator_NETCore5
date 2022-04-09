@@ -37,7 +37,7 @@ namespace Calculator.UserControls.Forms
                         return titleAttribute.Title;
                     }
                 }
-                return System.IO.Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().CodeBase);
+                return System.IO.Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location);
             }
         }
 

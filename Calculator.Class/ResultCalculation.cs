@@ -47,19 +47,19 @@ namespace Calculator.Class
             {
                 if (proceededOperators[i - 1] == '+')
                 {
-                    Result = Result + floatNumbers[i];
+                    Result += floatNumbers[i];
                 } 
                 else if (proceededOperators[i - 1] == '-')
                 {
-                    Result = Result - floatNumbers[i];
+                    Result -= floatNumbers[i];
                 }
                 else if (proceededOperators[i - 1] == 'x')
                 {
-                    Result = Result * floatNumbers[i];
+                    Result *= floatNumbers[i];
                 }
                 else if (proceededOperators[i - 1] == '/')
                 {
-                    Result = Result / floatNumbers[i];
+                    Result /= floatNumbers[i];
                 }
             }
 

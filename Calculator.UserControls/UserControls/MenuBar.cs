@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using Calculator.UserControls.Forms;
+using Calculator.Class;
 
-namespace Calculator.UserControls
+namespace Calculator.UserControls.UserControls
 {
     public partial class MenuBar : UserControl
     {
@@ -21,5 +22,16 @@ namespace Calculator.UserControls
             AboutBox aboutBox = new();
             aboutBox.ShowDialog();
         }
+
+        private void basicToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserControlSwap.SwapControl<Basic>(Constants.basicCalculator, "Basic Calculator", this);
+        }
+
+        private void temperatureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserControlSwap.SwapControl<ConvertTemperature>(Constants.convertTemperature, "Temperature Converter", this);
+        }
     }
 }
+

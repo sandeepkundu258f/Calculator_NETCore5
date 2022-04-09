@@ -15,7 +15,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Forms\WinBasic.cs">
+    <Compile Update="Forms\WinMain.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
