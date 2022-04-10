@@ -21,6 +21,7 @@ namespace Calculator.Class
             }
             double? inKelvin = null, OutputValDouble = null;
             
+            //Convert to Kelvin (SI)
             if(InputID != (int)Constants.Temperature.Kelvin)
             {
                 if(InputID == (int)Constants.Temperature.Celsius)
@@ -37,6 +38,8 @@ namespace Calculator.Class
                 inKelvin = InputValDouble;
             }
 
+
+            //Convert to Output
             if(OutputID == (int)Constants.Temperature.Kelvin)
             {
                 OutputValDouble = inKelvin;
@@ -50,7 +53,14 @@ namespace Calculator.Class
                 OutputValDouble = (((double)9 / (double)5) * (inKelvin - 273.15)) + (double)32;
             }
 
-            return Math.Round(double.Parse(OutputValDouble.ToString()),6, MidpointRounding.AwayFromZero).ToString();
+            try
+            {
+                return Math.Round(double.Parse(OutputValDouble.ToString()), 6, MidpointRounding.AwayFromZero).ToString();
+            }
+            catch(FormatException e)
+            {
+                return Constants.Invalid;
+            }
         }
     }
 }
