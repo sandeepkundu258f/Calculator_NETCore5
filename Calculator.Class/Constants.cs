@@ -8,6 +8,7 @@ namespace Calculator.Class
 {
     public static class Constants
     {
+
         #region Common
         public static string Invalid { get => "Invalid"; }
         #endregion
@@ -45,6 +46,7 @@ namespace Calculator.Class
             basicCalculator,
             convertTemperature,
             convertLength
+
         };
         
         public static IList<string> allControls = _allControls.AsReadOnly();
@@ -73,7 +75,6 @@ namespace Calculator.Class
             Mile,
             NauticalMile
         }
-
         #endregion
     }
 

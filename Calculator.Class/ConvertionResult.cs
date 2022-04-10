@@ -38,6 +38,7 @@ namespace Calculator.Class
                 inKelvin = InputValDouble;
             }
 
+
             //Convert to Output
             if(OutputID == (int)Constants.Temperature.Kelvin)
             {
