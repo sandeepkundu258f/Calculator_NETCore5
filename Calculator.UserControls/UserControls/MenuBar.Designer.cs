@@ -38,6 +38,7 @@ namespace Calculator.UserControls.UserControls
             this.temperatureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lengthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +91,8 @@ namespace Calculator.UserControls.UserControls
             // converterToolStripMenuItem
             // 
             this.converterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.temperatureToolStripMenuItem});
+            this.temperatureToolStripMenuItem,
+            this.lengthToolStripMenuItem});
             this.converterToolStripMenuItem.Name = "converterToolStripMenuItem";
             this.converterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.converterToolStripMenuItem.Text = "Converters";
@@ -116,6 +118,13 @@ namespace Calculator.UserControls.UserControls
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // lengthToolStripMenuItem
+            // 
+            this.lengthToolStripMenuItem.Name = "lengthToolStripMenuItem";
+            this.lengthToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lengthToolStripMenuItem.Text = "Length";
+            this.lengthToolStripMenuItem.Click += new System.EventHandler(this.lengthToolStripMenuItem_Click);
             // 
             // MenuBar
             // 
@@ -143,5 +152,6 @@ namespace Calculator.UserControls.UserControls
         private System.Windows.Forms.ToolStripMenuItem basicToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem converterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem temperatureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lengthToolStripMenuItem;
     }
 }

@@ -32,6 +32,11 @@ namespace Calculator.UserControls.UserControls
         {
             UserControlSwap.SwapControl<ConvertTemperature>(Constants.convertTemperature, "Temperature Converter", this);
         }
+
+        private void lengthToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserControlSwap.SwapControl<ConvertLength>(Constants.convertLength, "Length Converter", this);
+        }
     }
 }
 

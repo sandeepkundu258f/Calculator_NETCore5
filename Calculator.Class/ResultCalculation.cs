@@ -12,7 +12,7 @@ namespace Calculator.Class
         {
             if(strOut[0]=='-' && (strOut.Length < 2))
             {
-                return "Invalid";
+                return Constants.Invalid;
             }
 
             string[] rawNumbers = strOut.Split('+','-','/','x');

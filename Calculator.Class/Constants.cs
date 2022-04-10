@@ -8,22 +8,43 @@ namespace Calculator.Class
 {
     public static class Constants
     {
-        #region Calculation
-        private static List<string> _inputOperators = new() { "+", "-", "/", "x", "." };
-        private static List<string> _arithmeticOperators = new() { "+", "-", "/", "x" };
+        #region Common
+        public static string Invalid { get => "Invalid"; }
+        #endregion
 
-        public static IList<string> inputOperators = _inputOperators.AsReadOnly();
-        public static IList<string> arithmeticOperators = _arithmeticOperators.AsReadOnly();
+        #region Calculation
+        public static List<string> inputOperators
+        {
+            get
+            {
+                return new() { "+", "-", "/", "x", "." };
+            }
+        }
+
+        public static List<string> arithmeticOperators
+        {
+            get
+            {
+                return new() { "+", "-", "/", "x" };
+            }
+        }
+
+        //public static IList<string> inputOperators = _inputOperators.AsReadOnly();
+        //public static IList<string> arithmeticOperators = _arithmeticOperators.AsReadOnly();
         #endregion
 
         #region Controls
-        public static readonly string basicCalculator = "basicCalculator";
-        public static readonly string convertTemperature = "convertTemperature";
+        //public static readonly string basicCalculator = "basicCalculator";
+        
+        public static string basicCalculator { get => "basicCalculator"; }
+        public static string convertTemperature { get => "convertTemperature"; }
+        public static string convertLength { get => "convertLength"; }
 
         private static List<string> _allControls = new()
         {
             basicCalculator,
-            convertTemperature
+            convertTemperature,
+            convertLength
         };
         
         public static IList<string> allControls = _allControls.AsReadOnly();
@@ -36,6 +57,21 @@ namespace Calculator.Class
             Celsius = 1,
             Fahrenheit,
             Kelvin
+        }
+
+        public enum Length
+        {
+            Nanometer = 1,
+            Micron,
+            Millimeter,
+            Centimeter,
+            Meters,
+            Kilometer,
+            Inches,
+            Feet,
+            Yards,
+            Mile,
+            NauticalMile
         }
 
         #endregion
