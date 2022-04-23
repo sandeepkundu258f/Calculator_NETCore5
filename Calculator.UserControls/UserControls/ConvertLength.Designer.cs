@@ -29,6 +29,7 @@ namespace Calculator.UserControls.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConvertLength));
             this.btnBack = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
@@ -50,6 +51,7 @@ namespace Calculator.UserControls.UserControls
             this.btnReset = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnSwap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBack
@@ -319,10 +321,22 @@ namespace Calculator.UserControls.UserControls
             this.label2.TabIndex = 59;
             this.label2.Text = "Output";
             // 
-            // ConvertTemperature
+            // btnSwap
+            // 
+            this.btnSwap.Image = ((System.Drawing.Image)(resources.GetObject("btnSwap.Image")));
+            this.btnSwap.Location = new System.Drawing.Point(336, 67);
+            this.btnSwap.Name = "btnSwap";
+            this.btnSwap.Size = new System.Drawing.Size(30, 27);
+            this.btnSwap.TabIndex = 60;
+            this.btnSwap.UseVisualStyleBackColor = true;
+            this.btnSwap.Click += new System.EventHandler(this.btnSwap_Click);
+            this.btnSwap.Enter += new System.EventHandler(this.btnRemoveFocus_Enter);
+            // 
+            // ConvertLength
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSwap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnReset);
@@ -376,5 +390,6 @@ namespace Calculator.UserControls.UserControls
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSwap;
     }
 }
