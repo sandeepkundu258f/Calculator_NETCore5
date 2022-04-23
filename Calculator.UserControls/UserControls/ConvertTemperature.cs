@@ -112,5 +112,17 @@ namespace Calculator.UserControls.UserControls
             textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
+
+        private void btnSwap_Click(object sender, EventArgs e)
+        {
+            int tempInput = comboBoxInput.SelectedIndex;
+            int tempOutput = comboBoxOutput.SelectedIndex;
+
+            comboBoxInput.SelectedIndex = tempOutput;
+            comboBoxOutput.SelectedIndex = tempInput;
+
+            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            //calculate
+        }
     }
 }

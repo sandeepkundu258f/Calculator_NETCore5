@@ -60,7 +60,7 @@ namespace Calculator.UserControls.UserControls
         private void btnStrConCat_Click(object sender, EventArgs e)
         {
             textBoxInput.Text = StringMaker.Join(textBoxInput.Text, ((Button)sender).Text);
-            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
 
@@ -76,7 +76,7 @@ namespace Calculator.UserControls.UserControls
             if (textBoxInput.Text == string.Empty)
                 textBoxInput.Text = "0";
 
-            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
 
@@ -84,21 +84,21 @@ namespace Calculator.UserControls.UserControls
         {
             SetComboBoxDataSource();
             textBoxInput.Text = "0";
-            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
 
         private void comboBox_DropDownClosed(object sender, EventArgs e)
         {
             lblHidden.Focus();
-            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             textBoxInput.Text = "0";
-            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
 
@@ -109,7 +109,7 @@ namespace Calculator.UserControls.UserControls
             if (textBoxInput.Text == string.Empty)
                 textBoxInput.Text = "0";
 
-            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
 
@@ -117,7 +117,19 @@ namespace Calculator.UserControls.UserControls
         {
             textBoxInput.Text = "0";
             SetComboBoxDataSource();
-            textBoxOutput.Text = ConvertionResult.Temperature(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
+            //calculate
+        }
+
+        private void btnSwap_Click(object sender, EventArgs e)
+        {
+            int tempInput = comboBoxInput.SelectedIndex;
+            int tempOutput = comboBoxOutput.SelectedIndex;
+
+            comboBoxInput.SelectedIndex = tempOutput;
+            comboBoxOutput.SelectedIndex = tempInput;
+
+            textBoxOutput.Text = ConvertionResult.Length(textBoxInput.Text, textBoxOutput.Text, InputID, OutputID);
             //calculate
         }
     }
